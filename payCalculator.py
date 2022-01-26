@@ -1,20 +1,20 @@
 def calculatePay():
-    # Implement your solution in between the two comment blocks   
+
+    # This first line is provided for you
+
     hrs = 0.0
     rate = 0.0
-    pay = 0.0 #predefining variable default
-
-
+    pay = 0.0 
     try:
-        rate = float(input("Enter Rate: "))
         hrs = float(input("Enter Hours: "))
+        rate = float(input("Enter Rate: "))
 
         if(hrs > 40):
             OTpay = (rate*0.5)*(hrs-40)
         else:
             OTpay = 0.0
 
-        pay = (rate*hrs) + OTpay
+        pay = rate*hrs + OTpay
 
         print("Pay:",str(pay))
     except: 
@@ -28,4 +28,4 @@ def calculatePay():
 ## uncomment calculatePay() and run > python payCalculator.py
 ## ***IMPORTANT*** please recomment before you submit/sync your assignment.
 ## OR YOUR TEST WILL NOT RUN
-#calculatePay()
+calculatePay()
