@@ -19,7 +19,7 @@ def calculatePay():
         print("Pay:",str(pay))
     except: 
         print("Error, please enter numeric input")
-        exit()
+        quit()
 
     
     # end assignment
