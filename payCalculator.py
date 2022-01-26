@@ -14,7 +14,7 @@ def calculatePay():
         else:
             OTpay = 0.0
 
-        pay = rate*hrs + OTpay
+        pay = (rate*hrs) + OTpay
 
         print("Pay:",str(pay))
     except: 
