@@ -1,7 +1,5 @@
 def calculatePay():
-    # Implement your solution in between the two comment blocks
-
-    print("calculating pay")    
+    # Implement your solution in between the two comment blocks   
     hrs = 0.0
     rate = 0.0
     pay = 0.0 #predefining variable default
@@ -18,8 +16,11 @@ def calculatePay():
 
         pay = rate*hrs + OTpay
 
-        print("Pay: ",str(pay))
-    except: print("Error, please enter numeric input")
+        print("Pay:",str(pay))
+    except: 
+        print("Error, please enter numeric input")
+        quit()
+
     
     # end assignment
 
