@@ -19,7 +19,6 @@ def calculatePay():
         print("Pay:",str(pay))
     except: 
         print("Error, please enter numeric input")
-        quit()
 
     
     # end assignment
@@ -28,4 +27,4 @@ def calculatePay():
 ## uncomment calculatePay() and run > python payCalculator.py
 ## ***IMPORTANT*** please recomment before you submit/sync your assignment.
 ## OR YOUR TEST WILL NOT RUN
-#calculatePay()
+calculatePay()
