@@ -4,17 +4,22 @@ def calculatePay():
     rate = 0.0
     pay = 0.0 #predefining variable default
 
-    hrs = float(input("Enter Hours:"))
-    rate = float(input("Enter Hourly Rate:"))
 
-    if(hrs > 40):
-        OTpay = (rate*0.5)*(hrs-40)
-    else:
-        OTpay = 0.0
+    try:
+        hrs = float(input("Enter Hours:"))
+        rate = float(input("Enter Hourly Rate:"))
 
-    pay = rate*hrs + OTpay
+        if(hrs > 40):
+            OTpay = (rate*0.5)*(hrs-40)
+        else:
+            OTpay = 0.0
 
-    print("Pay:",str(pay))
+        pay = rate*hrs + OTpay
+
+        print("Pay:",str(pay))
+    except: 
+        print("Error, please enter numeric input")
+        exit()
 
     
     # end assignment
